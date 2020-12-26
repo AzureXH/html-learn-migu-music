@@ -1,0 +1,391 @@
+/* --------------- 导航栏 -------------- */
+/* 群组选择器，以逗号形式隔开同时选择多个元素 */
+header,
+main,
+footer {
+	/* 最小宽度 */
+	min-width: 1500px;
+}
+
+/* 一级菜单栏 */
+#header {
+	width: 100%;
+	/* border: 1px solid red; */
+}
+
+.header {
+	/* padding-top: 5px; */
+	width: 100%;
+	/* border: 1px solid red; */
+	box-shadow: 0px 1px 10px 0px #A9A9A9;
+}
+
+/* logo area */
+.header .logo {
+	height: 20%;
+	/* 行高 一个内联元素或者内联块元素在一个元素中垂直对齐方式
+	行高和高度保持一样
+	*/
+	line-height: 70px;
+	/* border: 1px solid red; */
+	float: left;
+	margin-right: 70px;
+	margin-left: 5px;
+	transform: scale(1);
+}
+
+/* logo area */
+
+/* menu area */
+.header .menu {
+	width: 60%;
+	height: 70px;
+	/* border: 1px solid red; */
+	float: left;
+}
+
+.header .menu ul {
+	
+}
+
+.header .menu ul li {
+	display: inline-block;
+	height: 70px;
+	line-height: 70px;
+	/* border: 1px solid red; */
+	margin-right: 35px;
+	/* 字体大小 */
+	font-size: 16px;
+	/* 字间距 */
+	letter-spacing: 1px;
+}
+
+.header .menu ul li a {
+	color: #a0a0a0;
+}
+
+/* 当鼠标移到a标签上则字体颜色发生改变 */
+.header .menu ul li a:hover {
+	color: #e91e63;
+}
+
+.header .menu ul li.active a {
+	color: #e91e63;
+}
+
+/* 一级菜单栏的右侧部分 */
+.header .header-right {
+	width: 15%;
+	height: 70px;
+	/* border: 1px solid red; */
+	float: right;
+}
+
+/* 一级菜单栏的右侧部分 */
+/* 一级菜单栏 */
+
+/* 二级菜单栏 */
+.sub-header {}
+
+.sub-header ul {
+	/* border: 1px solid red; */
+	margin-left: 125px;
+}
+
+.sub-header ul li {
+	display: inline-block;
+	/* border: 1px solid red; */
+	margin-right: 30px;
+	padding: 10px 0;
+}
+
+.sub-header ul li a {
+	font-size: 14px;
+	color: #666666;
+}
+
+.sub-header ul li a:hover {
+	color: #a0a0a0;
+}
+
+.sub-header ul li.active a {
+	color: #e91e63;
+}
+
+/* 二级菜单栏 */
+/* --------------- 导航栏 -------------- */
+
+/*--------------- 轮播图 ---------------*/
+.swiper-container {
+	width: 100%;
+	border: 1px solid red;
+	padding: 30px 0;
+}
+
+.swiper-container .carsouel-container {
+	width: 100%;
+	height: 350px;
+	border: 1px solid red;
+	position: relative;
+	padding-bottom: 20px;
+
+}
+
+/* 图像切换 */
+.swiper-container .img-pic {
+	width: 75%;
+	height: 350px;
+	border: 1px solid red;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.swiper-container .img-pic ul {
+	position: relative;
+	border: 1px solid aqua;
+	height: 350px;
+}
+
+.swiper-container .img-pic ul li {
+	position: absolute;
+}
+
+/* 选择ul标签的第一个li标签 */
+.swiper-container .img-pic ul li:nth-child(1) {
+	width: 70%;
+	height: 80%;
+	left: -5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.swiper-container .img-pic ul li:nth-child(2) {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-container .img-pic ul li:nth-child(n+3) {
+	width: 70%;
+	height: 80%;
+	border: 1px solid red;
+	right: -5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.swiper-container .img-pic ul li:nth-child(3) {
+	/* 元素的层级,只有开启定位的元素才可以使用，数字越大层级越高*/
+	z-index: -1;
+}
+
+.swiper-container .img-pic ul li:nth-child(4) {
+	z-index: -2;
+}
+
+.swiper-container .img-pic ul li:nth-child(5) {
+	z-index: -3;
+}
+
+.swiper-container .img-pic ul li img {
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+/* 图像切换 */
+
+.swiper-container .slider-action {
+	position: absolute;
+	border: 1px solid red;
+	width: 60px;
+	height: 120px;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: #e91e63;
+	/* 透明度 取值范围:0-1 */
+	opacity: 0.5;
+	/* 文本水平居中 */
+	text-align: center;
+	/* 行高 */
+	line-height: 120px;
+}
+
+.swiper-container .slider-action:hover {
+	opacity: 1;
+}
+
+.swiper-container .slider-action span {
+	font-size: 30px;
+	color: white;
+}
+
+.swiper-container .slider-action-left {
+	left: 0px;
+	border-radius: 0px 60px 60px 0px;
+}
+
+.swiper-container .slider-action-right {
+	right: 0px;
+	border-radius: 60px 0px 0px 60px;
+}
+
+.swiper-container .page-icon {
+	/* padding-top: 10px; */
+	position: absolute;
+	bottom: -30px;
+	left: 50%;
+	transform: translateX(-50%);
+	border: 1px solid red;
+}
+
+.swiper-container .page-icon ul li {
+	border-radius: 10px;
+	display: inline-block;
+	width: 13px;
+	height: 4px;
+	background-color: #ccc;
+	margin: 0px 3px;
+}
+
+/*--------------- 轮播图 ---------------*/
+
+/*--------------- 四个导航 ---------------*/
+#find-banner {
+	width: 100%;
+	border: 1px solid red;
+
+}
+
+.find-container .find-container-item {
+	border: 1px solid red;
+	width: 70%;
+	height: 130px;
+	margin: 0 auto;
+	/* 水平布局 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.find-container ul li {
+	border: 1px solid red;
+	height: 110px;
+	width: 30%;
+	transform: scale(0.8);
+	margin: 0 auto;
+	border-radius: 15px;
+}
+
+.find-container  ul li img {
+	width: 100%;
+	height: 100%;
+	
+}
+
+/*--------------- 四个导航 ---------------*/
+
+/*--------------- 歌单推荐 ---------------*/
+#Playlist-recommend {
+	border: 1px solid red;
+	height: 500px;
+}
+
+#Playlist-recommend .Playlist-banner {
+	border: 1px solid red;
+	height: 500px;
+	display: grid;
+	grid-template-rows: 50px 450px;
+}
+
+#Playlist-recommend .Playlist-banner .Playlist-banner-top {
+	border: 1px solid red;
+}
+
+.Playlist-banner-top ul li {
+	border: 1px solid red;
+	/* center 居中 */
+	/* text-align: center; */
+	/* 文本水平排列 */
+	display: inline-block;
+	/* justify-content:center */
+}
+
+.Playlist-banner-top .Playlist-text-left {
+	color: #333;
+	font-size: 24px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	margin-left: 5px;
+	
+}
+
+.Playlist-banner-top .Playlist-text-right {
+	padding-right: 20px;
+	padding-top: 10px;
+	float: right;
+	color: #999;
+	font-size: 14px;
+	
+}
+
+#Playlist-recommend .Playlist-banner .Playlist-banner-imgs {
+	height: 450px;
+	border: 1px solid red;
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+}
+
+.Playlist-banner-imgs .Playlist-imgs-left {
+	height: 450px;
+	border: 1px solid red;
+}
+
+.Playlist-banner-imgs .Playlist-imgs-left ul{
+	height: 450px;
+}
+
+.Playlist-banner-imgs .Playlist-imgs-left ul li{
+	height: 97%;
+	width: 95%;
+	border: 1px solid red;
+	/* transform: scale(0.9); */
+	margin: 3px auto;
+	/* overflow: hidden; */
+	border-radius:20px ;
+	background: url(../img/Playlist-recommend/lf2.png);
+	background-size: 100% 100%;
+	
+}
+
+/* .Playlist-banner-imgs .Playlist-imgs-left ul li img{
+	padding-top: 10px;
+	border-radius:20px ;
+	width: 100%;
+	height: 100%;
+	margin: 0px auto;
+} */
+
+
+.Playlist-banner-imgs .Playlist-imgs-right {
+	height: 450px;
+	border: 1px solid red;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 225px 225px;
+	
+}
+
+.Playlist-banner-imgs .Playlist-imgs-right .Playlist-imgs {
+	border: 1px solid red;
+
+}
+
+
+
+
+
+
+/*--------------- 歌单推荐 ---------------*/

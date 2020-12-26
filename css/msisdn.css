@@ -1,0 +1,133 @@
+html {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	/*border :1px solid red;*/
+}
+
+
+a.login-btn {
+	display: block;
+	width: 50px;
+	text-align: center;
+	padding: 5px 0;
+	background-color: #FF6347;
+	color: white;
+	border-radius: 10px;
+	border: 1px solid #C0C0C0;
+	font-size: 14px;
+	box-shadow: 0px 1px 3px 0px #A9A9A9;
+}
+
+.regist-content {
+	margin: 40px auto;
+	padding: 0 30px;
+	border-radius: 10px;
+	box-shadow: 0 0 5px 0 #C0C0C0;
+
+}
+
+.regist-content .title {
+	padding: 15px 0;
+	border-bottom: 1px solid #C0C0C0;
+	font-size: 20px;
+	/* 字体间距 */
+	letter-spacing: 3px;
+	/* 下外边距 */
+	margin-bottom: 50px;
+}
+
+
+.validform .form-item {
+	margin: 15px 0;
+	/*border :1px solid red;*/
+	position: relative;
+	padding-left: 35%;
+}
+
+.validform .form-item input.txt {
+	width: 270px;
+	padding: 10px 0;
+	padding-left: 15px;
+	border-radius: 7px;
+	border: 1px solid #C0C0C0;
+	margin-right: 30px;
+}
+
+.validform .form-item input.txt2 {
+	width: 146px;
+}
+
+.validform .form-item .submit-btm{
+	margin-bottom: 100px;
+}
+
+.validform .form-item input.txt4{
+	margin-bottom: 30px;
+}
+
+.validform .form-msgcode .btn {
+	background-color: white;
+	border: 1px solid #FF6347;
+	color: #FF6347;
+	padding: 4px 10px;
+	border-radius: 5px;
+	margin-right: 32px;
+}
+
+.validform .form-msgcode .disabled {
+	/* 禁止点击 */
+	pointer-events: none;
+	border: 1px solid #CCCCCC;
+	color: #CCCCCC;
+}
+
+
+
+.validform .form-item label {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	/*border :1px solid red;*/
+	width: 33%;
+	padding: 7px 0;
+	font-size: 14px;
+	text-align: right;
+}
+
+.validform .form-item input.active {
+	border: 1px solid #FF6347;
+}
+
+
+
+.validform .form-item span.validform-error {
+	font-size: 14px;
+	color: #FF6347;
+	display: none;
+}
+
+
+.validform .form-item span.error {
+	display: inline-block;
+}
+
+.submit-btm {
+	width: 260px;
+	padding: 10px 0;
+	background-color: #FF6347;
+	color: white;
+	border: 0;
+	border-radius: 5px;
+}
+
+
+.regist-ok{
+	padding: 100px ;
+	text-align: center;
+	color: #00FA9A;
+	font-family:kaiti;
+}
+	

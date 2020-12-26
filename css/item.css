@@ -1,0 +1,16 @@
+#find-banner{
+	width: 100%;
+}
+
+.find-container .find-container-item{
+	width: 100%;
+	height: 130px;
+	border: 1px solid red;
+	margin: 0 auto;
+}
+
+.find-container .find-container-item div{
+	height: 130px;
+	border: 1px solid red;
+	margin: 0 auto;
+}

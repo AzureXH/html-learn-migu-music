@@ -1,0 +1,130 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	color: #666666;
+}
+
+li {
+	/* 去掉项目符号 */
+	list-style: none;
+}
+
+a {
+	/* 去掉下划线 */
+	text-decoration: none;
+
+}
+
+.container {
+	width: 80%;
+	border: 1px solid red;
+	margin: 0px auto;
+}
+
+/* 解决高度塌陷 */
+.container::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+input {
+	outline: none;
+}
+
+header,
+main,
+footer {
+	/* 最小宽度 */
+	min-width: 1500px;
+}
+
+.w-50 {
+	width: 50%;
+}
+
+.w-55 {
+	width: 55%;
+}
+
+.w-60 {
+	width: 60%;
+}
+
+.w-70 {
+	width: 70%;
+}
+
+.w-75 {
+	width: 75%;
+}
+
+.w-80 {
+	width: 80%;
+}
+
+.mr-15 {
+	margin-right: 10px;
+}
+
+.px-15 {
+	padding: 0px 10px;
+}
+
+.py-15 {
+	padding: 10px 0px;
+}
+
+.pt-15 {
+	padding-top: 10px;
+}
+
+.pt-100 {
+	padding-top: 100px;
+}
+
+.pb-15 {
+	padding-bottom: 10px;
+}
+
+.pl-15 {
+	padding-left: 10px;
+}
+
+.box-shadow {
+	box-shadow: 0px 1px 10px 0px #A9A9A9;
+}
+
+.bg-white {
+	background-color: white;
+}
+
+.bg-Lavender {
+	background-color: #FBFCFE;
+}
+
+.float-l {
+	float: left;
+}
+
+.float-r {
+	float: right;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.flex-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+border {
+	/*border: 1px solid red;*/
+	/
+}
