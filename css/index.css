@@ -258,7 +258,7 @@ footer {
 
 }
 
-.find-container .find-container-item {
+.find-container-item {
 	border: 1px solid red;
 	width: 70%;
 	height: 130px;
@@ -270,7 +270,7 @@ footer {
 
 }
 
-.find-container ul li {
+.find-container-item li {
 	border: 1px solid red;
 	height: 110px;
 	width: 30%;
@@ -279,7 +279,7 @@ footer {
 	border-radius: 15px;
 }
 
-.find-container  ul li img {
+.find-item img {
 	width: 100%;
 	height: 100%;
 	
