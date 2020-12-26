@@ -288,23 +288,23 @@ footer {
 /*--------------- 四个导航 ---------------*/
 
 /*--------------- 歌单推荐 ---------------*/
-#Playlist-recommend {
+#playlist-recommend {
 	border: 1px solid red;
 	height: 500px;
 }
 
-#Playlist-recommend .Playlist-banner {
+#playlist-recommend .playlist-banner {
 	border: 1px solid red;
 	height: 500px;
 	display: grid;
 	grid-template-rows: 50px 450px;
 }
 
-#Playlist-recommend .Playlist-banner .Playlist-banner-top {
+#playlist-recommend .playlist-banner .playlist-banner-top {
 	border: 1px solid red;
 }
 
-.Playlist-banner-top ul li {
+.playlist-banner-top ul li {
 	border: 1px solid red;
 	/* center 居中 */
 	/* text-align: center; */
@@ -313,7 +313,7 @@ footer {
 	/* justify-content:center */
 }
 
-.Playlist-banner-top .Playlist-text-left {
+.playlist-banner-top .playlist-text-left {
 	color: #333;
 	font-size: 24px;
 	letter-spacing: 2px;
@@ -322,7 +322,7 @@ footer {
 	
 }
 
-.Playlist-banner-top .Playlist-text-right {
+.playlist-banner-top .playlist-text-right {
 	padding-right: 20px;
 	padding-top: 10px;
 	float: right;
@@ -331,23 +331,23 @@ footer {
 	
 }
 
-#Playlist-recommend .Playlist-banner .Playlist-banner-imgs {
+#playlist-recommend .playlist-banner .playlist-banner-imgs {
 	height: 450px;
 	border: 1px solid red;
 	display: grid;
 	grid-template-columns: 1fr 4fr;
 }
 
-.Playlist-banner-imgs .Playlist-imgs-left {
+.playlist-banner-imgs .playlist-imgs-left {
 	height: 450px;
 	border: 1px solid red;
 }
 
-.Playlist-banner-imgs .Playlist-imgs-left ul{
+.playlist-banner-imgs .playlist-imgs-left ul{
 	height: 450px;
 }
 
-.Playlist-banner-imgs .Playlist-imgs-left ul li{
+.playlist-banner-imgs .playlist-imgs-left ul li{
 	height: 97%;
 	width: 95%;
 	border: 1px solid red;
@@ -355,12 +355,12 @@ footer {
 	margin: 3px auto;
 	/* overflow: hidden; */
 	border-radius:20px ;
-	background: url(../img/Playlist-recommend/lf2.png);
+	background: url(../img/playlist-recommend/lf2.png);
 	background-size: 100% 100%;
 	
 }
 
-/* .Playlist-banner-imgs .Playlist-imgs-left ul li img{
+/* .playlist-banner-imgs .playlist-imgs-left ul li img{
 	padding-top: 10px;
 	border-radius:20px ;
 	width: 100%;
@@ -369,7 +369,7 @@ footer {
 } */
 
 
-.Playlist-banner-imgs .Playlist-imgs-right {
+.playlist-banner-imgs .playlist-imgs-right {
 	height: 450px;
 	border: 1px solid red;
 	display: grid;
@@ -378,7 +378,7 @@ footer {
 	
 }
 
-.Playlist-banner-imgs .Playlist-imgs-right .Playlist-imgs {
+.playlist-banner-imgs .playlist-imgs-right .playlist-imgs {
 	border: 1px solid red;
 
 }
