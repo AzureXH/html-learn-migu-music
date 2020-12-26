@@ -133,7 +133,7 @@ footer {
 
 /* 图像切换 */
 .img-pic {
-	width: 75%;
+	width: 1400px;
 	height: 350px;
 	border: 1px solid red;
 	position: absolute;
@@ -253,16 +253,14 @@ footer {
 
 /*--------------- 四个导航 ---------------*/
 #find-banner {
-	width: 100%;
 	border: 1px solid red;
 
 }
 
 .find-container-item {
 	border: 1px solid red;
-	width: 70%;
-	height: 130px;
-	margin: 0 auto;
+	height: 100px;
+	margin: 0;
 	/* 水平布局 */
 	display: flex;
 	justify-content: center;
@@ -270,18 +268,24 @@ footer {
 
 }
 
+@media(max-width:900px) {
+	.find-container-item {
+		height: 200px;
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+	}
+}
+
 .find-item {
 	border: 1px solid red;
-	height: 110px;
-	width: 30%;
 	transform: scale(0.8);
 	margin: 0 auto;
 	border-radius: 15px;
 }
 
 .find-item img {
-	width: 100%;
-	height: 100%;
+	width: 190px;
+	height: 80px;
 	
 }
 
@@ -290,14 +294,14 @@ footer {
 /*--------------- 歌单推荐 ---------------*/
 #playlist-recommend {
 	border: 1px solid red;
-	height: 500px;
+	height: 20%;
+	min-width: 1500px;
 }
 
 .playlist-banner {
 	border: 1px solid red;
-	height: 500px;
 	display: grid;
-	grid-template-rows: 50px 450px;
+	grid-template-rows: 1fr 9fr;
 }
 
 .playlist-banner-top {
@@ -332,55 +336,40 @@ footer {
 }
 
 .playlist-banner-imgs {
-	height: 450px;
-	border: 1px solid red;
+	/* height: 450px; */
+	/* border的红线会影响对齐 */
+	/* border: 1px solid red; */	
 	display: grid;
 	grid-template-columns: 1fr 4fr;
 }
 
-.playlist-imgs-left {
-	height: 450px;
-	border: 1px solid red;
+
+.playlist-imgs-left{
+	height: 100%;
+	width: 100%;
+	/* border: 1px solid red; */
 }
 
-.playlist-imgs-left ul{
-	height: 450px;
-}
-
-.playlist-imgs-left ul li{
-	height: 97%;
-	width: 95%;
-	border: 1px solid red;
-	/* transform: scale(0.9); */
-	margin: 3px auto;
-	/* overflow: hidden; */
+.playlist-imgs-left img{
 	border-radius:20px ;
-	background: url(../img/playlist-recommend/lf2.png);
-	background-size: 100% 100%;
-	
-}
-
-/* .playlist-banner-imgs .playlist-imgs-left ul li img{
-	padding-top: 10px;
-	border-radius:20px ;
+	min-width: 300px;
 	width: 100%;
 	height: 100%;
-	margin: 0px auto;
-} */
+}
 
 
 .playlist-imgs-right {
-	height: 450px;
+	margin-left: 30px;
+	/* height: 450px; */
 	border: 1px solid red;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: 225px 225px;
+	grid-template-columns: repeat(5,1fr);
+	grid-template-rows: repeat(2,1fr);
 	
 }
 
 .playlist-imgs {
 	border: 1px solid red;
-
 }
 
 
