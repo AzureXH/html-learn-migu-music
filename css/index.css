@@ -21,7 +21,7 @@ footer {
 }
 
 /* logo area */
-.header .logo {
+.logo {
 	height: 20%;
 	/* 行高 一个内联元素或者内联块元素在一个元素中垂直对齐方式
 	行高和高度保持一样
@@ -37,18 +37,18 @@ footer {
 /* logo area */
 
 /* menu area */
-.header .menu {
+.menu {
 	width: 60%;
 	height: 70px;
 	/* border: 1px solid red; */
 	float: left;
 }
 
-.header .menu ul {
+.menu ul {
 	
 }
 
-.header .menu ul li {
+.menu ul li {
 	display: inline-block;
 	height: 70px;
 	line-height: 70px;
@@ -60,21 +60,21 @@ footer {
 	letter-spacing: 1px;
 }
 
-.header .menu ul li a {
+.menu ul li a {
 	color: #a0a0a0;
 }
 
 /* 当鼠标移到a标签上则字体颜色发生改变 */
-.header .menu ul li a:hover {
+.menu ul li a:hover {
 	color: #e91e63;
 }
 
-.header .menu ul li.active a {
+.menu ul li.active a {
 	color: #e91e63;
 }
 
 /* 一级菜单栏的右侧部分 */
-.header .header-right {
+.header-right {
 	width: 15%;
 	height: 70px;
 	/* border: 1px solid red; */
@@ -122,7 +122,7 @@ footer {
 	padding: 30px 0;
 }
 
-.swiper-container .carsouel-container {
+.carsouel-container {
 	width: 100%;
 	height: 350px;
 	border: 1px solid red;
@@ -132,7 +132,7 @@ footer {
 }
 
 /* 图像切换 */
-.swiper-container .img-pic {
+.img-pic {
 	width: 75%;
 	height: 350px;
 	border: 1px solid red;
@@ -141,18 +141,18 @@ footer {
 	transform: translateX(-50%);
 }
 
-.swiper-container .img-pic ul {
+.img-pic ul {
 	position: relative;
 	border: 1px solid aqua;
 	height: 350px;
 }
 
-.swiper-container .img-pic ul li {
+.img-pic ul li {
 	position: absolute;
 }
 
 /* 选择ul标签的第一个li标签 */
-.swiper-container .img-pic ul li:nth-child(1) {
+.img-pic ul li:nth-child(1) {
 	width: 70%;
 	height: 80%;
 	left: -5%;
@@ -160,12 +160,12 @@ footer {
 	transform: translateY(-50%);
 }
 
-.swiper-container .img-pic ul li:nth-child(2) {
+.img-pic ul li:nth-child(2) {
 	width: 100%;
 	height: 100%;
 }
 
-.swiper-container .img-pic ul li:nth-child(n+3) {
+.img-pic ul li:nth-child(n+3) {
 	width: 70%;
 	height: 80%;
 	border: 1px solid red;
@@ -174,20 +174,20 @@ footer {
 	transform: translateY(-50%);
 }
 
-.swiper-container .img-pic ul li:nth-child(3) {
+.img-pic ul li:nth-child(3) {
 	/* 元素的层级,只有开启定位的元素才可以使用，数字越大层级越高*/
 	z-index: -1;
 }
 
-.swiper-container .img-pic ul li:nth-child(4) {
+.img-pic ul li:nth-child(4) {
 	z-index: -2;
 }
 
-.swiper-container .img-pic ul li:nth-child(5) {
+.img-pic ul li:nth-child(5) {
 	z-index: -3;
 }
 
-.swiper-container .img-pic ul li img {
+.carousel-item img {
 	width: 100%;
 	height: 100%;
 	border-radius: 15px;
@@ -196,7 +196,7 @@ footer {
 
 /* 图像切换 */
 
-.swiper-container .slider-action {
+.slider-action {
 	position: absolute;
 	border: 1px solid red;
 	width: 60px;
@@ -212,26 +212,26 @@ footer {
 	line-height: 120px;
 }
 
-.swiper-container .slider-action:hover {
+.slider-action:hover {
 	opacity: 1;
 }
 
-.swiper-container .slider-action span {
+.slider-action span {
 	font-size: 30px;
 	color: white;
 }
 
-.swiper-container .slider-action-left {
+.slider-action-left {
 	left: 0px;
 	border-radius: 0px 60px 60px 0px;
 }
 
-.swiper-container .slider-action-right {
+.slider-action-right {
 	right: 0px;
 	border-radius: 60px 0px 0px 60px;
 }
 
-.swiper-container .page-icon {
+.page-icon {
 	/* padding-top: 10px; */
 	position: absolute;
 	bottom: -30px;
@@ -240,7 +240,7 @@ footer {
 	border: 1px solid red;
 }
 
-.swiper-container .page-icon ul li {
+.page-icon li {
 	border-radius: 10px;
 	display: inline-block;
 	width: 13px;
@@ -270,7 +270,7 @@ footer {
 
 }
 
-.find-container-item li {
+.find-item {
 	border: 1px solid red;
 	height: 110px;
 	width: 30%;
@@ -293,14 +293,14 @@ footer {
 	height: 500px;
 }
 
-#playlist-recommend .playlist-banner {
+.playlist-banner {
 	border: 1px solid red;
 	height: 500px;
 	display: grid;
 	grid-template-rows: 50px 450px;
 }
 
-#playlist-recommend .playlist-banner .playlist-banner-top {
+.playlist-banner-top {
 	border: 1px solid red;
 }
 
@@ -313,7 +313,7 @@ footer {
 	/* justify-content:center */
 }
 
-.playlist-banner-top .playlist-text-left {
+.playlist-text-left {
 	color: #333;
 	font-size: 24px;
 	letter-spacing: 2px;
@@ -322,7 +322,7 @@ footer {
 	
 }
 
-.playlist-banner-top .playlist-text-right {
+.playlist-text-right {
 	padding-right: 20px;
 	padding-top: 10px;
 	float: right;
@@ -331,23 +331,23 @@ footer {
 	
 }
 
-#playlist-recommend .playlist-banner .playlist-banner-imgs {
+.playlist-banner-imgs {
 	height: 450px;
 	border: 1px solid red;
 	display: grid;
 	grid-template-columns: 1fr 4fr;
 }
 
-.playlist-banner-imgs .playlist-imgs-left {
+.playlist-imgs-left {
 	height: 450px;
 	border: 1px solid red;
 }
 
-.playlist-banner-imgs .playlist-imgs-left ul{
+.playlist-imgs-left ul{
 	height: 450px;
 }
 
-.playlist-banner-imgs .playlist-imgs-left ul li{
+.playlist-imgs-left ul li{
 	height: 97%;
 	width: 95%;
 	border: 1px solid red;
@@ -369,7 +369,7 @@ footer {
 } */
 
 
-.playlist-banner-imgs .playlist-imgs-right {
+.playlist-imgs-right {
 	height: 450px;
 	border: 1px solid red;
 	display: grid;
@@ -378,7 +378,7 @@ footer {
 	
 }
 
-.playlist-banner-imgs .playlist-imgs-right .playlist-imgs {
+.playlist-imgs {
 	border: 1px solid red;
 
 }
